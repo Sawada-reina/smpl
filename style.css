@@ -1,0 +1,328 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* CSSのリセット(絶対に書き換えない) */
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,li,dl,dt,dd{
+margin:0;
+padding:0;
+font-size:100%;
+font-weight:normal;
+line-height:1;
+}
+
+/* imgタグのリセット(絶対に書き換えない)*/
+img{vertical-align: bottom;
+}
+
+
+/*width/heigthとpaddingの関係（絶対に書き換えない）*/
+*, *::before, *::after{
+box-sizing:border-box;
+}
+
+
+
+body{
+/*font-family:"Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, "sans-serif";*/
+font-family:YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "serif";
+color:#000000;
+background-color:#e7d8ed;
+}
+
+div.inner{
+max-width:1000px;
+width:100%;
+margin:0 auto;
+}
+
+
+
+
+
+/*header*/
+header{
+background-image:url("img/haikei.png");
+background-repeat:repeat;
+background-position:center;
+
+margin:20px 0px 20px 0px;
+padding:30px 0px 30px 0px;
+border-top:3px solid #FAFAFA;
+}
+
+header div.inner{
+display: flex;
+justify-content: space-between;
+}
+
+header div.mozi{
+display:flex;
+justify-content:flex-start;
+}
+
+header h1{
+margin:10px 30px 10px 0px;
+}
+
+header p{
+font-size:120%;
+padding:35px 0px 15px 0px;
+color:#e5ccff;
+font-weight:bold;
+}
+
+header ul{
+display:flex;
+justify-content: space-between;
+padding:35px 0px 15px 0px;
+}
+
+
+header ul li{
+list-style-type:none;
+margin:0px 10px 0px 10px;
+font-size:100%;
+}
+
+header ul li a{
+color:#000000;
+text-decoration:none;
+background-color:#f8e8ff;
+padding:5px 5px 5px 5px;
+}
+
+header li a:hover{
+text-decoration:underline;
+}
+
+/*header終わり*/
+
+
+
+/*mv*/
+div.mv{
+margin:0px 0px 50px 0px;
+
+}
+
+div.mv img{
+width:100%;
+height:auto;
+}
+
+
+/*message*/
+
+section.message{
+margin: 50px 0px 50px 0px;
+
+}
+
+section.message h2{
+}
+
+section.message div.message{
+margin:50px 0px 10px 0px;
+padding:30px 0px 60px 0px;
+background-image:url("img/setumei01.png");
+background-repeat: no-repeat;
+
+}
+
+section.message div.message p{
+font-size:100%;
+padding: 50px 40px 0px 600px;
+line-height:1.5;
+color:#FaFAFA;
+
+
+}
+
+section.message div.message01{
+display: flex;
+justify-content: space-between;
+margin: 10px 0px 10px 0px;
+}
+
+section.message div.message01 div.bun{
+margin:20px 10px 10px 0px;
+}
+
+section.message div.message01 div.bun h3{
+font-size:131.25%;
+font-weight:bold;
+line-height:1.5;
+
+}
+
+section.message div.message01 div.bun p{
+margin:30px 10px 10px 0px;
+line-height:1.5;
+}
+
+section.message p{
+line-height:1.5;
+}
+
+/*messegi*/
+
+
+
+/*商品紹介*/
+
+section.menu{
+margin:50px 0px 50px 0px;
+}
+
+section.menu div.menu{
+text-align: center;
+}
+
+section.menu div.menu img{
+margin:20px 0px 20px 0px;
+}
+
+section.menu div.text{
+}
+
+section.menu div.text h2{
+font-size:250%;
+font-weight:bold;
+margin:0px 0px 20px 0px;
+text-align: center;
+}
+
+section.menu div.text p.price{
+font-size:206.25%;
+text-align: center;
+}
+
+section.menu div.text p.explain{
+font-size:100%;
+line-height:1.5;
+margin:20px 0px 20px 0px;
+}
+
+section.menu p.syokai{
+}
+
+section.menu p.btn{
+margin:20px 20px 20px 20px;
+text-align: center;
+}
+
+/*商品紹介終わり*/
+
+/*注意点*/
+section.chuui{
+background-image: url("img/chuui.png");
+background-repeat: no-repeat;
+background-position:top;
+padding:30px 0px 30px 10px;
+}
+
+section.chuui div.inner{
+}
+ 
+section.chuui div.inner h2{
+font-size:150%;
+font-weight:bold;
+display: flex;
+justify-content: center;
+margin:0px 0px 20px 0px;
+color:#bb0000;
+}
+
+section.chuui div.inner p{
+padding:0px 0px 0px 80px;
+margin:0px 0px 10px 0px;
+font-weight:bold;
+color:#bb0000;
+font-size:110%;
+}
+
+section.chuui div.inner ul{
+padding:0px 0px 0px 100px;
+}
+
+
+/*包装のとこ*/
+section.houso div.inner h2{
+display: flex;
+justify-content: center;
+font-size:187.5%;
+margin:200px 0px 80px 0px;
+}
+
+section.houso div.inner ul{
+display: flex;
+justify-content:space-around;
+
+}
+
+section.houso div.inner ul li{
+margin:10px 10px 10px 10px;
+list-style-type:none;
+
+}
+
+
+/*link*/
+ul.link{
+margin:80px 0px 50px 0px;
+display: flex;
+justify-content:space-around;
+}
+
+ul.link li{
+margin:0px 10px 20px 10px;
+list-style-type:none;
+}
+
+
+/*footer*/
+
+
+footer{
+color:#ffffff;
+background-image:url("img/haikei.png");
+background-repeat:repeat;
+background-position:center;
+
+padding:0px 0px 30px 0px;
+}
+
+div.contFooter{
+padding:30px 0px 20px 0px;
+}
+
+div.upperFooter{
+width:900px;
+display:flex;
+justify-content:flex-start;
+margin:auto;
+}
+
+div.upperFooter ul{
+margin:5px 20px 0px 20px;
+}
+
+
+div.upperFooter ul li{
+list-style-type:none;
+line-height:1.5;
+}
+
+
+p.copyright{
+color:#AC00C5;
+font-size:100%;
+text-align:center;
+padding: 30px 10px 30px 10px;
+letter-spacing:0.1em;
+text-indent:0.1em;
+background-color:#FFFFFF;
+}
+
+
+
